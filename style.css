@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.form-container,
+.dashboard-container {
+    background: rgba(30, 30, 60, 0.9);
+    padding: 30px 25px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ffeaa7;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+
+button {
+    width: 95%;
+    padding: 12px;
+    background-color: #fd79a8;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e84393;
+}
+
+.logout-btn {
+    background-color: #d63031;
+}
+
+.logout-btn:hover {
+    background-color: #e17055;
+}
+
+a {
+    color: #a29bfe;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+
+.features {
+    background-color: #2d3436;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.features h3 {
+    color: #81ecec;
+    margin-bottom: 15px;
+}
+
+.features ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.features li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}

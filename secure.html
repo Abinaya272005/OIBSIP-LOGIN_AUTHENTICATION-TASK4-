@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <h2>Welcome to Your Dashboard</h2>
+        <p>Hello, <span id="user-name"></span>!</p>
+        <div class="features">
+            <h3>What You Can Do:</h3>
+            <ul>
+                <li>✔️ View Secure Info</li>
+                <li>✔️ Manage Account (coming soon)</li>
+                <li>✔️ Notifications Panel</li>
+                <li>✔️ Try Dark Mode</li>
+            </ul>
+        </div>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+    <script>
+        if (!localStorage.getItem("isLoggedIn")) {
+            window.location.href = "login.html";
+        }
+        const currentUser = localStorage.getItem("currentUser");
+        document.getElementById("user-name").innerText = currentUser || "User";
+
+        function logout() {
+            localStorage.removeItem("isLoggedIn");
+            localStorage.removeItem("currentUser");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+
+</html>
